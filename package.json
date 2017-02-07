@@ -1,0 +1,15 @@
+{
+  "name": "nodepractise",
+  "version": "1.0.0",
+  "description": "Node Practise Server",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "baljinder.singh",
+  "license": "ISC"
+}
