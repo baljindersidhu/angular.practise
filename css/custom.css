@@ -1,8 +1,38 @@
+/*Global style*/
 body{
   background-color: #F44336;
   color: #fff;
+  font-family: 'Oxygen', sans-serif;
 }
 
 nav.navbar.navbar-default {
     background-color: #fff;
+}
+
+.jumbotron{
+  background-color: inherit;
+}
+
+.search-bar{
+  margin-bottom: 40px;
+}
+/*applying color to search-bar text*/
+.search-bar input:hover, .search-bar input:focus{
+  color: #0275d8;
+}
+/*aligning list-item content with search bar text*/
+list-item.list-group-item.ng-scope {
+    padding-left: 12px;
+}
+/*removing anchor tag underline*/
+.list-group-item a , .list-group-item a:hover, .list-group-item a:visited, .list-group-item a:active{
+  text-decoration: none;
+}
+
+.list-group-item a{
+  color: #F44336;
+}
+
+.list-group-item a:hover{
+  color: #0275d8;
 }
