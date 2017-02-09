@@ -20,19 +20,32 @@ nav.navbar.navbar-default {
 .search-bar input:hover, .search-bar input:focus{
   color: #0275d8;
 }
-/*aligning list-item content with search bar text*/
-list-item.list-group-item.ng-scope {
-    padding-left: 12px;
+
+/*list item*/
+
+.list-item-pill {
+  padding : 0;
 }
-/*removing anchor tag underline*/
-.list-group-item a , .list-group-item a:hover, .list-group-item a:visited, .list-group-item a:active{
+/* minimum height for each pill */
+.list-group-item {
+    min-height: 8em !important;
+}
+/* pill content override default properties for anchor */
+.list-item-pill a{
+  color: #F44336;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+/* changing pill content color on hover */
+.list-item-pill a:hover{
+  color: #0275d8;
   text-decoration: none;
 }
-
-.list-group-item a{
-  color: #F44336;
+/* aligning pill content with search bar placeholder*/
+.list-item-pill .list-group-item{
+  padding: 12px;
 }
-
-.list-group-item a:hover{
-  color: #0275d8;
+/* shadow effect on hover */
+.list-item-pill .list-group-item:hover{
+  box-shadow: 1px 1px 10px #e4e4e4;
 }
