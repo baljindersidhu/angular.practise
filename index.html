@@ -23,7 +23,7 @@
             David Chu's Restaurant
           </a>
         </div>
-      </div>
+      </div> <!-- navbar-header ends -->
     </nav>
   </header>
   <section>
@@ -40,12 +40,10 @@
             <button class="btn btn-success" ng-click="index.search()">
               Search
             </button>
-          </div>
+          </div> <!-- input-group ends -->
         </div>
       </form>
-      <div class="list-group">
-        <list-item class="list-group-item" ng-repeat="item in index.items"></list-item>
-      </div>
+      <list-group list="index.items"></list-group>
     </div>
   </section>
 </body>
