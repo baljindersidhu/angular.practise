@@ -2,11 +2,15 @@
   'use strict';
 
   angular.module('testApp')
-  .directive('listItem', ListItem)
+  .directive('listGroup', ListGroup)
 
-  function ListItem() {
+  function ListGroup() {
     var bdo = {
-      templateUrl: 'templates/list.item.html'
+    	restrict : 'E',
+    	scope : {
+    		list : '=?'
+    	},
+      	templateUrl: 'templates/list.item.html'
     }
 
     return bdo;
